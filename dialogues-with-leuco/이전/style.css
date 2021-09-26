@@ -1,0 +1,172 @@
+*,
+*:before,
+*:after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 100%;
+}
+
+body {
+  font-family: source-han-sans-korean, source-han-serif-korean, sans-serif, serif;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 1.625;
+  word-break: keep-all;
+  width: 100vw;
+  height: 100vh;
+  overflow-x: hidden;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  z-index: 999;
+  position: absolute;
+}
+
+.stage {
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+
+section {
+  padding: 1.5em 2em;
+}
+
+.achilles .saying {
+  display: none;
+}
+
+.patroklos .saying {
+  display: none;
+}
+
+.achilles {
+  width: 50%;
+  height: 100%;
+  font-family: source-han-sans-korean;
+  background-color: #00ff00;
+}
+
+.patroklos {
+  width: 50%;
+  height: 100%;
+  font-family: source-han-serif-korean;
+  background-color: #ff00ff;
+}
+
+p.saying {
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+span.footnote-mark {
+  color: white;
+}
+
+.footnote {
+  font-size: 1rem;
+  line-height: 1.725;
+  color: white;
+  position: absolute;
+  bottom: 1.5em;
+  padding-right: 1.5em;
+  display: none;
+}
+
+@media screen and (max-width: 600px) {
+  body {
+  font-family: source-han-sans-korean, source-han-serif-korean, sans-serif, serif;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 1.725;
+  word-break: keep-all;
+  width: 100vw;
+  height: 100vh;
+  overflow-x: hidden;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  z-index: 999;
+  position: absolute;
+}
+
+.stage {
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+
+section {
+  padding: 1em 1.5em;
+}
+
+.achilles .saying {
+  display: none;
+}
+
+.patroklos .saying {
+  display: none;
+}
+
+.achilles {
+  width: 50%;
+  height: 100%;
+  font-family: source-han-sans-korean;
+  background-color: #00ff00;
+}
+
+.patroklos {
+  width: 50%;
+  height: 100%;
+  font-family: source-han-serif-korean;
+  background-color: #ff00ff;
+}
+
+p.saying {
+  font-size: 1rem;
+  cursor: pointer;
+}
+  /*body {
+    font-family: sans-serif, serif;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 1.5;
+    word-break: keep-all;
+    width: 100vw;
+    height: 100vh;
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .achilles {
+    width: 100%;
+    height: 100%;
+    font-family: sans-serif;
+    background-color: #00ff00;
+  }
+
+  .patroklos {
+    width: 100%;
+    height: 100%;
+    font-family: serif;
+    background-color: #ff00ff;
+  }
+
+  p.saying {
+    font-size: 1rem;
+    cursor: pointer;
+  }*/
+}
+
+
+

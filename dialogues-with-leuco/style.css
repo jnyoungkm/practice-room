@@ -1,0 +1,54 @@
+/**,
+*:before,
+*:after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 100%;
+}*/
+
+body {
+  font-size: 16px;
+  font-weight: normal;
+  line-height: 2;
+  word-break: keep-all;
+  margin: 1em 1em;
+  padding: 1em 1em;
+  color: #444;
+}
+
+h1 {
+  font-size: 2em;
+}
+
+h2 {
+  font-size: 1.5em;
+}
+
+h2 span {
+  display: block;
+}
+
+cite {
+  font-style: normal;
+}
+
+cite:before {
+  content: '「';
+  /*margin-left: -8px;*/
+  /*margin-right: -.5px;*/
+}
+
+cite:after {
+  content: '」';
+  /*margin-right: -8px;*/
+}
+
+p.saying {
+  text-indent: -3em;
+  margin-left: 3em;
+}
+
+span.interlocutor {
+  font-style: italic;
+}
