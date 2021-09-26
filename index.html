@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Practice Room</title>
+    <meta name="description" content="Practice Room">
+    <meta name="keywords" content="연습실, Practice Room, practice room">
+    <link rel="stylesheet" href="style.css">
+    <link id="favicon" rel="icon" href="favicon" type="image/x-icon">
+    <script>
+      var faviconRoute = 'favicon/';
+      var faviconNames = ['favicon-1.png', 'favicon-2.png', 'favicon-3.png', 'favicon-4.png', 'favicon-5.png', 'favicon-6.png', 'favicon-7.png', 'favicon-8.png', 'favicon-9.png', 'favicon-10.png', 'favicon-11.png', 'favicon-12.png', 'favicon-13.png', 'favicon-14.png', 'favicon-15.png'];
+      var idx = 0;
+      setInterval(func, 300);
+      function func() {
+        document.querySelector("#favicon").setAttribute('href', faviconRoute + faviconNames[idx++]);
+        idx %= faviconNames.length;
+      }
+    </script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="sky">
+        <header>
+          <h1 class="title" onclick="alert('It changes every day at 3, 4, 8, 12, 18, 20 and 22 o’clock.')">Practice Room</h1>
+          <span id="clock">00:00:00</span>
+        </header>
+        <div class="night">
+          <div class="star">t</div>
+          <div class="star">w</div>
+          <div class="star">i</div>
+          <div class="star">n</div>
+          <div class="star">k</div>
+          <div class="star">l</div>
+          <div class="star">e</div>
+          <div class="star">s</div>
+          <div class="star">t</div>
+          <div class="star">a</div>
+          <div class="star">r</div>
+        </div>
+      </div>
+      <div class="ground">
+        <div class="list-header">
+          <div>Title</div>
+          <div>Last Updated</div>
+        </div>
+        <ul class="list">
+          <li onclick="window.open('color-name-list')" style="cursor: pointer;">
+            <div>Color name list</div>
+            <div>09/22/21</div>
+          </li>
+          <li onclick="window.open('caution-warning-danger')" style="cursor: pointer;">
+            <div>CAUTION WARNING DANGER</div>
+            <div>09/18/21</div>
+          </li>
+          <li onclick="window.open('writing-paper-and-envelopes')" style="cursor: pointer;">
+            <div>Writing Paper and Envelopes</div>
+            <div>09/12/21</div>
+          </li>
+          <li onclick="window.open('refresh')" style="cursor: pointer;">
+            <div>refresh</div>
+            <div>09/10/21</div>
+          </li>
+          <li onclick="window.open('dialogues-with-leuco')" style="cursor: pointer;">
+            <div>Dialogues with Leucò</div>
+            <div>09/21/21</div>
+          </li>
+          <li onclick="window.open('coca-cola-zero')" style="cursor: pointer;">
+            <div>Coca-Cola Zero Consumption Record in 2021</div>
+            <div>09/08/21</div>
+          </li>
+          <li onclick="window.open('video-collection')" style="cursor: pointer;">
+            <div>Video Collection</div>
+            <div>09/10/21</div>
+          </li>
+          <li onclick="window.open('georges-perec')" style="cursor: pointer;">
+            <div>The Art and Craft of Approaching Your Head of Department to Submit a Request for a Raise</div>
+            <div>09/19/21</div>
+          </li>
+          <li onclick="window.open('cherry')" style="cursor: pointer;">
+            <div>cherry?</div>
+            <div>03/04/21</div>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <script src="jquery.min.js"></script>
+    <script src="background.js"></script>
+    <script src="clock.js"></script>
+  </body>
+</html>
