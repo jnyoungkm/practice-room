@@ -1,0 +1,222 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+*,
+*:before,
+*:after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 100%;
+}
+
+body {
+  font-family: 'Space Mono', monospace;
+  font-size: 16px;
+  line-height: 1.5;
+  word-break: keep-all;
+  width: 100vw;
+  height: 100vh;
+  background-color: black;
+  color: red;
+  overflow: hidden;
+  cursor: Default;
+  -ms-user-select: none; 
+  -moz-user-select: -moz-none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+header {
+  font-family: Arial, sans-serif;
+  font-size: 1rem;
+  line-height: 1.325;
+  font-weight: bold;
+  text-align: center;
+  color: white;
+  max-width: 100%;
+  margin: 1rem auto;
+}
+
+h1 {
+  text-transform: uppercase;
+}
+
+h2 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  text-align: center;
+  text-transform: uppercase;
+  margin: 0.4rem 0;
+}
+
+.receipt {
+  width: 300px;
+  padding: 0 1.5rem 1.25rem 1.5rem;
+  background-color: white;
+  position: absolute;
+  box-shadow: 0 1px 3px rgb(0 0 0 / 20%);
+  cursor: move;
+}
+
+#receipt_january {
+  bottom: 2rem;
+  left: 0;
+  z-index: 999;
+}
+
+#receipt_february {
+  top: 3rem;
+  left: 4rem;
+  z-index: 888;
+}
+
+#receipt-march {
+  top: 5rem;
+  left: 18rem;
+  z-index: 111;
+}
+
+#receipt-april {
+  top: 9rem;
+  left: 30rem;
+  z-index: 999;
+}
+
+#receipt-may {
+  top: 13rem;
+  left: 42rem;
+  z-index: 999;
+}
+
+#receipt-june {
+  top: 6rem;
+  right: 20rem;
+  z-index: 888;
+}
+
+#receipt-july {
+  top: 14rem;
+  right: 7rem;
+  z-index: 333;
+}
+
+#receipt-august {
+  top: 3rem;
+  right: 0;
+  z-index: 222;
+}
+
+.table {
+  border-top: 1.5px dashed red;
+}
+
+.table-head {
+  display: grid;
+  grid-template-columns: 60px 1fr 1fr;
+}
+
+.table-body {
+  display: grid;
+  grid-template-columns: 60px 1fr 1fr;
+}
+
+.th-qnty, .tb-qnty {
+  text-align: right;
+}
+
+.total {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  border-top: 1.5px dashed red;
+  border-bottom: 1.5px dashed red;;
+}
+
+.total .value {
+  text-align: right;
+}
+
+blockquote {
+  font-size: 10px;
+  margin-top: 1rem;
+  text-align: center;
+}
+
+@media screen and (max-width: 600px) {
+  header {
+    font-family: Arial, sans-serif;
+    font-size: 1rem;
+    line-height: 1.325;
+    font-weight: bold;
+    text-align: center;
+    color: white;
+    max-width: 100%;
+    margin: 1rem auto;
+  }
+
+  h1 {
+    text-transform: uppercase;
+  }
+
+  h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+    margin: 0.4rem 0;
+  }
+
+  .receipt {
+    transform: scale(0.7);
+  }
+
+  #receipt_january {
+    bottom: 1rem;
+    left: 0;
+    z-index: 999;
+  }
+
+  #receipt_february {
+    top: 1rem;
+    left: 1rem;
+    z-index: 777;
+  }
+
+  #receipt-march {
+    top: 4rem;
+    left: 4rem;
+    z-index: 777;
+  }
+
+  #receipt-april {
+    top: 7rem;
+    left: 8rem;
+    z-index: 888;
+  }
+
+  #receipt-may {
+    top: 10rem;
+    left: 12rem;
+    z-index: 888;
+  }
+
+  #receipt-june {
+    top: 5rem;
+    right: 4rem;
+    z-index: 666;
+  }
+
+  #receipt-july {
+    top: 1rem;
+    right: 2rem;
+    z-index: 333;
+  }
+
+  #receipt-august {
+    top: 6rem;
+    right: 0;
+    z-index: 222;
+  }
+}
+
+
